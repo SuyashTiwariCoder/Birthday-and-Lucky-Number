@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon" />
+    <title>Lucky-Meter</title>
+  </head>
+  <body>
+    <div>
+      <h1>Lucky Meter</h1>
+      <h2>Let's check if your Birthday is Lucky or Not</h2>
+      <div class="container-2">
+        <label for="Date-of-birth">Date-of-Birth</label>
+        <input type="date" id="dateOfBirth" />
+        <label for="Lucky Number">Lucky Number</label>
+        <input type="number" id="luckyNumber" />
+
+        <button id="btn">Check</button>
+        <p id="outputBox"></p>
+      </div>
+    </div>
+    <footer class="container-2">
+      <p>
+        In this app the user Inputs his/her birthday and his lucky number then
+        if the sum of your digits of dob are divisible by your lucky number then
+        you r lucky else not .
+      </p>
+    </footer>
+    <script src="/app.js"></script>
+  </body>
+</html>
