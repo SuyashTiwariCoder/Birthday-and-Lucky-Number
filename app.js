@@ -3,11 +3,15 @@ let luckyNumber = document.querySelector("#luckyNumber");
 let checkBtn = document.querySelector("#btn");
 let output = document.querySelector("#outputBox");
 
-checkBtn.addEventListener("click", function isLucky() {
+checkBtn.addEventListener("click", isPositive)
+
+
+
+function isLucky() {
   let dob = dateOfBirth.value;
   let sum = calculateSum(dob);
   calculateLucky(sum);
-});
+};
 
 function calculateSum(dob) {
   dob = dob.replaceAll("-", "");
@@ -26,3 +30,10 @@ function calculateLucky(sum) {
     output.innerHTML = "NO!! luck is not today with you 😥😥 "
   }
 }
+  function isPositive() {
+    if (luckyNumber.value > 0) {
+      isLucky();
+    } else {
+      alert("Please enter positive Values of Lucky Number . ")
+    }
+  }
