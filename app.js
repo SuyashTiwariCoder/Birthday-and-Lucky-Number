@@ -31,9 +31,9 @@ function calculateLucky(sum) {
   }
 }
   function isPositive() {
-    if (luckyNumber.value > 0) {
+    if (Number(dateOfBirth.value)!= "" &&  luckyNumber.value > 0) {
       isLucky();
     } else {
-      alert("Please enter positive Values of Lucky Number . ")
+      alert("Invalid Input ")
     }
   }
